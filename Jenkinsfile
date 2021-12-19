@@ -1,7 +1,5 @@
 pipeline{
-agent {
-  label 'Slave_label'
-}
+agent any
 stages {
   stage('Gitcheckout') {
     steps {
