@@ -5,7 +5,7 @@ agent {
 stages {
   stage('Gitcheckout') {
     steps {
-     git 'https://github.com/JevitaD/javaPipeline'
+     git branch: 'main', url: 'https://github.com/JevitaD/pipeline'
     }
   }
   stage('build') {
