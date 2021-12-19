@@ -16,7 +16,7 @@ stages {
   }
   stage('deploy') {
     steps {
-      sh 'sudo cp *.war /opt/*.56/webapps'
+      sh 'sudo cp /target/*.war /opt/*.56/webapps'
     }
   }
 }
